@@ -4,27 +4,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Download APK</title>
+<title>RoV APK Download</title>
 
 <style>
 
-body{
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
 font-family:sans-serif;
-background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#222);
+}
+
+body{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-color:white;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url('https://images.alphacoders.com/120/1208746.jpg');
+background-size:cover;
+background-position:center;
 overflow:hidden;
+color:white;
 }
 
-.box{
-width:320px;
+.card{
+width:350px;
+padding:30px;
+border-radius:25px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+text-align:center;
+box-shadow:0 0 35px rgba(0,255,150,0.3);
+animation:fade 1s ease;
+}
+
+.logo{
+width:120px;
+height:120px;
+border-radius:30px;
+box-shadow:0 0 25px rgba(0,255,150,0.5);
+margin-bottom:20px;
+}
+
+h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.desc{
+color:#ccc;
+margin-bottom:25px;
+font-size:15px;
+}
+
+.info{
+display:flex;
+justify-content:space-around;
+margin-bottom:25px;
+}
+
+.info div{
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
+padding:10px;
+border-radius:15px;
+width:90px;
+}
+
+.info h2{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.info p{
+font-size:13px;
+color:#bbb;
+}
+
+.btn{
+display:inline-block;
+width:100%;
+padding:16px;
+font-size:19px;
+font-weight:bold;
+border-radius:18px;
+text-decoration:none;
+color:white;
+background:linear-gradient(90deg,#00c853,#00e676);
+box-shadow:0 0 20px rgba(0,255,120,0.5);
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.04);
+}
+
+.footer{
+margin-top:20px;
+font-size:13px;
+color:#999;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img class="logo"
+src="https://play-lh.googleusercontent.com/lQ0N3Q4hP6h6d6r9n2j4YqR1J4H5m5X7Q5R1H9j4Q1yR1gJQ0j4L0x1mA=s180">
+
+<h1>RoV APK</h1>
+
+<p class="desc">
+ดาวน์โหลดเกมเวอร์ชันล่าสุด เล่นฟรี รองรับ Android
+</p>
+
+<div class="info">
+
+<div>
+<h2>199MB</h2>
+<p>ขนาด</p>
+</div>
+
+<div>
+<h2>v1.62</h2>
+<p>เวอร์ชัน</p>
+</div>
+
+<div>
+<h2>2026</h2>
+<p>อัปเดต</p>
+</div>
+
+</div>
+
+<a class="btn"
+href="https://www.mediafire.com/file/kq0ts847w64787y/RoV_1.62.1.6.apks/file">
+
+ดาวน์โหลด APK
+
+</a>
+
+<div class="footer">
+Developed by Aipplazz2017
+</div>
+
+</div>
+
+</body>
+</html>backdrop-filter:blur(10px);
 padding:30px;
 border-radius:25px;
 text-align:center;
