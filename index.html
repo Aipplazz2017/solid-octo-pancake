@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Download APK</title>
+
+<style>
+
+body{
+margin:0;
+padding:0;
+font-family:sans-serif;
+background:linear-gradient(135deg,#0f0f0f,#1a1a1a,#222);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+overflow:hidden;
+}
+
+.box{
+width:320px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 0 25px rgba(0,255,120,0.3);
+animation:fade 1s ease;
+}
+
+.logo{
+width:100px;
+height:100px;
+border-radius:25px;
+margin-bottom:15px;
+box-shadow:0 0 20px rgba(0,255,120,0.4);
+}
+
+h1{
+margin:10px 0;
+font-size:28px;
+}
+
+p{
+color:#bbb;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:linear-gradient(90deg,#00c853,#00e676);
+color:white;
+text-decoration:none;
+font-size:18px;
+border-radius:15px;
+transition:0.3s;
+box-shadow:0 0 15px rgba(0,255,120,0.5);
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.version{
+margin-top:20px;
+font-size:14px;
+color:#888;
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<img class="logo" src="https://cdn-icons-png.flaticon.com/512/888/888879.png">
+
+<h1>My APK</h1>
+
+<p>ดาวน์โหลดเวอร์ชันล่าสุด</p>
+
+<a class="btn" href="app.apk" download>
+ดาวน์โหลด APK
+</a>
+
+<div class="version">
+Version 1.0
+</div>
+
+</div>
+
+</body>
+</html>
