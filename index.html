@@ -1,39 +1,187 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoV APK Download - Aipplazz2017</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap" rel="stylesheet">
 
-<title>RoV APK Download</title>
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Chakra Petch', sans-serif;
+        }
 
-<style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* พื้นหลังปรับตามขนาดหน้าจอ */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                        url('https://images.alphacoders.com/120/1208746.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 20px;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:sans-serif;
-}
+        /* การ์ดหลัก (รองรับคอมและมือถือ) */
+        .card {
+            width: 100%;
+            max-width: 450px; /* ขนาดสูงสุดเมื่อดูในคอม */
+            padding: 40px 25px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out;
+        }
 
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
-url('https://images.alphacoders.com/120/1208746.jpg');
-background-size:cover;
-background-position:center;
-overflow:hidden;
-color:white;
-}
+        /* โลโก้ */
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px rgba(0, 255, 150, 0.3);
+            object-fit: cover;
+            transition: 0.4s ease;
+        }
 
-.card{
-width:350px;
-padding:30px;
-border-radius:25px;
-background:rgba(255,255,255,0.08);
+        .logo:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* หัวข้อ */
+        h1 {
+            font-size: clamp(26px, 6vw, 34px);
+            margin-bottom: 10px;
+            color: #00e676;
+            text-shadow: 0 0 15px rgba(0, 230, 118, 0.5);
+        }
+
+        .desc {
+            color: #eee;
+            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* ตารางข้อมูล (ยืดหยุ่นตามหน้าจอ) */
+        .info-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 35px;
+        }
+
+        .info-item {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px 5px;
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .info-item h2 {
+            font-size: clamp(14px, 4vw, 18px);
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .info-item p {
+            font-size: 11px;
+            color: #00e676;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* ปุ่มดาวน์โหลด */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 800;
+            border-radius: 22px;
+            text-decoration: none;
+            color: #003300;
+            background: linear-gradient(45deg, #00c853, #b2ff59);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 25px rgba(0, 200, 83, 0.4);
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 200, 83, 0.6);
+            filter: brightness(1.1);
+        }
+
+        /* ท้ายกระดาษ */
+        .footer {
+            margin-top: 25px;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 1px;
+        }
+
+        /* อนิเมชั่น */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ปรับแต่งสำหรับมือถือจอเล็ก */
+        @media (max-width: 380px) {
+            .card { padding: 30px 15px; }
+            .info-grid { gap: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img class="logo" src="https://เล่นเกม.com/wp-content/uploads/2021/04/RoV-Icon.png" alt="RoV Logo">
+
+        <h1>RoV Mobile</h1>
+        <p class="desc">ดาวน์โหลดไฟล์ APK เวอร์ชันล่าสุด<br>ติดตั้งง่าย ปลอดภัย เล่นได้ทันที</p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <h2>199 MB</h2>
+                <p>ขนาด</p>
+            </div>
+            <div class="info-item">
+                <h2>v1.62</h2>
+                <p>เวอร์ชัน</p>
+            </div>
+            <div class="info-item">
+                <h2>2026</h2>
+                <p>อัปเดต</p>
+            </div>
+        </div>
+
+        <a class="btn" href="https://www.mediafire.com/file/kq0ts847w64787y/RoV_1.62.1.6.apks/file" target="_blank">
+            DOWNLOAD APK
+        </a>
+
+        <div class="footer">
+            DEVELOPED BY AIPPLAZZ2017
+        </div>
+    </div>
+
+</body>
+</html>
 backdrop-filter:blur(12px);
 text-align:center;
 box-shadow:0 0 35px rgba(0,255,150,0.3);
